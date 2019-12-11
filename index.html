@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	
+
+	<!-- EXTERNAL LINK CSS/JAVASCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="navBar.css">  
+	
+	<title>U Zù Totò - Restaurant</title>
+	<link rel="icon" href="icon.png">
+</head>
+<body>
+
+	<!-- TOPNAV MENU -->
+    <header>
+         <nav>
+             <a href="javascript:void(0);" class="icon" onclick="phoneMenu()">
+             <img src="menu.svg">
+             </a>
+             <a href="index.html">Home</a>
+             <a href="menu.html">Menu</a>
+             <a href="gallery.html">Gallery</a>
+             <a href="contact.html">Contact</a>
+         </nav>
+    </header>
+
+    <!-- SLIDER -->
+		
+
+	<div id="wMain">
+	  <img class="mySlides" src="main.png "style="width : 100%;">
+	  <img class="mySlides" src="main2.png "style="width : 100%;">
+	</div>
+
+
+	
+	<!-- Article -->
+	<article>
+		<div><h1>U Zu Totò</h1></div><br/>
+		<h2> Where you can eat the best foods!</h2>
+        <p>
+		The restaurant, behind the Cathedral of Palermo, handed down the secrets of traditional cuisine, revisited with gourmet culinary techniques.
+		We are open for dinner, every day except Sunday.
+		</p>
+		<p>Our secrets melt in your mouth!</p>
+		<br/>
+    </article>
+
+	
+	
+	<!-- NEW YEAR CONTAINER -->
+
+	<div class="mainCointainer">
+		<div class="containerSMenu">
+		<img src="newyear.jpg"/>	
+		</div>
+		<div class="containerSMenu">
+			<h2 style="font-size : 70px;" >New Year Menù</h2>
+			<a href="newYearMenu.html"><button class="newyearButton" >See Menù</button></a>
+		</div>
+	</div>
+
+
+	<!-- SCRIPT FOR MENU -->
+        <script>
+            function phoneMenu(){
+                if($("nav a img").attr("src")=="menu_close.svg"){
+                    $("nav a img").attr("src", "menu.svg");
+                    $("nav a:not(:first-child)").css("display","none");
+                }else{
+                    $("nav a img").attr("src", "menu_close.svg");
+                    $("nav a:not(:first-child)").css("display","block");
+                }
+            }
+        </script>
+         <footer>
+            <p> &copy U Zu Totò</p>
+        </footer>
+
+	<!-- SCRIPT SLIDER -->
+		<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() 
+		{
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+		</script>
+
+	</body>
+
+</html>

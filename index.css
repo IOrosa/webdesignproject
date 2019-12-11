@@ -1,0 +1,121 @@
+#wMain
+{
+	padding-top: 70px;
+	padding-bottom: 10px;
+	height : auto;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#wMain img
+{
+	border-radius: 10px;
+}
+
+article
+{
+
+	color: white;
+	background-color: #1e2026;
+	margin: 15px;
+	line-height: 1.5em;
+	text-align: center;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+
+article h1
+{
+	padding:10px;
+	font-size: 54px;
+	color: #ff8900;
+
+}
+article h2
+{
+
+	font-size: 28px;
+}
+article p
+{
+	margin-bottom: 24px; 
+	font-size: 24px ; 
+}
+
+
+
+.mainCointainer
+{
+	border: 1px solid black;
+    display: flex;
+	margin: 15px;
+	margin-top: 30px;
+	border-radius: 10px;
+	background-color: #1e2026;
+}
+
+.mainCointainer:hover
+{
+	box-shadow: 0 8px 40px rgba(13, 12, 0, 1);
+}
+
+.containerSMenu
+{
+	flex-wrap: wrap;
+	color:#ff8900;
+	width: 50%;
+	height: auto;
+	text-align:center;
+	border-radius: 10px;
+}
+
+.containerSMenu img
+{
+
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	float:left;
+	width: 100%;
+	max-height: 300px;
+
+}
+
+.newyearButton
+{
+  background-color: #1e2026;
+  border: solid 2px #ff8900;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 10px;
+  color: #ff8900;
+}
+
+.newyearButton:hover 
+{
+ 	background-color: #494a4d;
+	color: white;
+}
+
+ 
+ 
+ @media screen and (max-width: 1100px) 
+ {
+	.mainCointainer
+	{
+		flex-direction: column;
+		min-width: 250px;
+	}
+	.containerSMenu
+	{
+		width: 100%;
+	}
+
+
+ }
+}

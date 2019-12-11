@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>U Zu Totò - Happy New Year!</title>
+    <link rel="icon" href="icon.png">
+	<!-- EXTERNAL LINK CSS/JAVASCRIPT -->
+	<link rel="stylesheet" type="text/css" href="navBar.css">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+
+    	main
+    	{
+            margin: 100px 30px 20px 30px;
+    		background-image : url("newYearBackground.png");
+    		text-align: center;
+    		background-repeat: no-repeat;
+			font-weight: bold;
+			background-size: cover;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    	}
+
+    	h1
+    	{
+    		color: #ff8900;
+            text-shadow: 2px 0 0 #1e2026, -2px 0 0 #1e2026, 0 2px 0 #1e2026, 0 -2px 0 #1e2026, 1px 1px #1e2026, -1px -1px 0 #1e2026, 1px -1px 0 #1e2026, -1px 1px 0 #1e2026;
+    		font-size :50px;
+    		font-style: oblique;
+    	}
+    	
+    	h3
+    	{
+    		font-size :30px;
+    		color: #008f1f;
+
+    	}
+    	li
+    	{
+    		color:  black;
+    		font-size :20px;
+            list-style: none;
+    	}
+        ul
+        {
+            padding-bottom: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+	<!-- MENU -->
+    <header>
+         <nav>
+             <a href="javascript:void(0);" class="icon" onclick="phoneMenu()">
+             <img src="menu.svg">
+             </a>
+             <a href="index.html">Home</a>
+             <a href="menu.html">Menu</a>
+             <a href="gallery.html">Gallery</a>
+             <a href="contact.html">Contact</a>
+         </nav>
+    </header>
+
+    <!-- MAIN -->
+	<main>
+
+		<h1>New Year Menù!</h1>
+		<ul>
+
+            <h3>APPETIZER</h3>
+			<li>
+				U mari d'aranci (Marinated sea bass and orange-flavored brown)
+			</li>
+			<li>
+				U viaggiu di l'arancinu in francia (Arancino alla beccafico on champagne sauce)
+			</li>
+            <h3>FIRST COURSE</h3>
+			<li>
+				
+				 Si maritau u Tunnu (Anelletti timbale with Balfegò red tuna, pistachios and Ragusano fondue)
+
+			</li>
+			<li>
+				 U iammuru ca' canta (Ravioli stuffed with potatoes and fennel with Gambero rosso from Mazara and its bisque)
+			</li>
+            <h3>PRE DESSERT</h3>
+			<li>
+				
+				A tarantella da ricciola (Mediterranean amberjack, prickly pear fig, sea asparagus and Nebrodi ham broth)
+
+			</li>
+            <h3>DESSERT</h3>
+			<li>
+				Mi votu e mi rivotu (Lemon-berry granita and gin tonic siphon)
+			</li>
+			<h3>MIDNIGHT DESSERT</h3>
+            <li>
+				2020 stamu arrivannu (Pistachio and almond meringue)
+			</li>
+		</ul>
+			
+	</main>
+
+         <footer>
+            <p> &copy U Zu Totò</p>
+        </footer>
+
+
+    <!-- SCRIPT FOR MENU -->
+        <script>
+            function phoneMenu(){
+                if($("nav a img").attr("src")=="menu_close.svg"){
+                    $("nav a img").attr("src", "menu.svg");
+                    $("nav a:not(:first-child)").css("display","none");
+                }else{
+                    $("nav a img").attr("src", "menu_close.svg");
+                    $("nav a:not(:first-child)").css("display","block");
+                }
+            }
+        </script>
+    </body>
+
+</html>

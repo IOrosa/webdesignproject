@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <!-- EXTERNAL LINK CSS/JAVASCRIPT -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="navBar.css"> 
+        <title>U Zù Totò - Contact</title>
+        <link rel="icon" href="icon.png">
+        <style>
+
+            article
+            {
+                margin: 50px;
+                border-radius: 10px;
+                padding: 8px;
+                background-color: #1e2026;
+                color :white ;
+                box-shadow: 5px 10px #888888;
+            }
+            main
+            {
+            	margin: 100px 30px 20px 30px;
+				
+            }
+            
+            #contact_info img
+            {
+                margin: 10px;
+            }
+
+            #contact_info a
+            {
+                text-decoration: none;
+                color: white;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <!-- TOPNAV MENU -->
+        <header>
+            <nav>
+                <a href="javascript:void(0);" class="icon" onclick="phoneMenu()">
+                    <img src="menu.svg">
+                </a>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+
+        <main>
+            <article style=" display:inline-block;">
+                    <img src="calendar.png">
+                    <ul style="list-style-type: none; padding-right: 10px;"> 
+                        <li><pre>Monday	    7AM–9:30PM</pre></li>
+                        <li><pre>Tuesday	    7AM–9:30PM</pre></li>
+                        <li><pre>Wednesday   7AM–9:30PM</pre></li>
+                        <li><pre>Thursday    7AM–9:30PM</pre></li>
+                        <li><pre>Friday	    7AM–9:30PM</pre></li>
+                        <li><pre>Saturday    9AM–12PM, 2–9PM</pre></li>
+                        <li><pre>Sunday	    9AM–12PM, 2–9PM</pre></li>
+                    </ul>
+            </article>
+
+
+            <article style=" display: inline-block; float:left;">
+                <img src="map.png">
+                <address style="margin: 20px; font-weight: bolder;">
+                    Božetěchova 1/2,
+                    612 00 Brno-Královo Pole
+                </address>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20846.05002345405!2d16.55978325!3d49.22414955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2sFaculty%20of%20Information%20Technology%2C%20Brno%20University%20of%20Technology!5e0!3m2!1sen!2scz!4v1574895715441!5m2!1sen!2scz" width="600" height="450" frameborder="0" style="border-radius:10px;" allowfullscreen=""></iframe>
+            </article>
+            
+
+            <article id="contact_info" style="float: left;">
+                
+                <p><img src="phone-call-button.png" align="middle"/>+602 335 689 447</p>
+                <p><img src="facebook-square-social-logo.png" align="middle"/><a href="facebook.com">www.facebook.com</a></p>
+
+                <p><img src="gm.ico" style="width: 35px; height: auto;" align="middle"/><a href="someadress@fitvut.cz">someadress@fitvut.cz</a></p>
+                <p><img src="google-plus.png" align="middle"/><a href="google.com">www.google+.com</a></p>
+                
+            </article>
+        </main>
+
+
+         <footer>
+            <p> &copy U Zu Totò</p>
+        </footer>
+
+
+
+
+    <!-- SCRIPT FOR MENU -->
+        <script>
+            function phoneMenu(){
+                if($("nav a img").attr("src")=="menu_close.svg"){
+                    $("nav a img").attr("src", "menu.svg");
+                    $("nav a:not(:first-child)").css("display","none");
+                }else{
+                    $("nav a img").attr("src", "menu_close.svg");
+                    $("nav a:not(:first-child)").css("display","block");
+                }
+            }
+        </script>
+        
+    </body>
+</html>

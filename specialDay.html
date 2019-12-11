@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>U Zu Totò - Restaurant</title>
+	<link rel="icon" href="icon.png">
+
+	<!-- EXTERNAL LINK CSS/JAVASCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="navBar.css">  
+
+	<style>
+		.mainCointainer
+		{
+			margin-left: 80px;
+			margin-right: 80px;
+			box-shadow: 5px 10px #888888;
+
+		}
+		.mainCointainer:hover
+		{
+			box-shadow: 5px 10px #888888;
+		}
+		.mainCointainer h1
+		{
+			font-size: 50px;
+			font-weight: bold;
+		}
+
+		.mainCointainer	li	
+		{
+			color:white;
+			font-size:25px;
+			list-style: none;
+		}
+		 @media screen and (max-width: 1100px) 
+		 {
+			.mainCointainer
+			{
+				padding: 30px;
+				flex-direction: column;
+	
+			}
+			.mainCointainer img
+			{
+				border-radius: 10px;
+				object-fit: cover;
+			}
+			.containerSMenu
+			{
+				width: 100%;
+			}
+
+		 }
+
+	</style>
+</head>
+<body>
+	<!-- MENU -->
+    <header>
+         <nav>
+             <a href="javascript:void(0);" class="icon" onclick="phoneMenu()">
+             <img src="menu.svg">
+             </a>
+             <a href="index.html">Home</a>
+             <a href="menu.html">Menu</a>
+             <a href="gallery.html">Gallery</a>
+             <a href="contact.html">Contact</a>
+         </nav>
+    </header>
+
+
+
+
+    <div class="mainCointainer" style="margin-top: 100px;">
+	 	<div class="containerSMenu">
+			<img src="fish.jpg"/>	
+		</div>
+		<div class="containerSMenu">
+			<h1>Fish Gorumet Menù</h1>
+				<ul>
+					<li>Crespelle ragù of Tuna and Sicilian pecorino cream</li>
+					<li>Paccheri alla norma and fish ragù</li>
+					<li>Raw tuna in raspberry vinegar and sour cream</li>
+				</ul>
+		</div>
+	</div>
+
+
+   <div class="mainCointainer">
+	 	<div class="containerSMenu">
+			<img  src="meat.jpg"/ >	
+		</div>
+		<div class="containerSMenu">
+			<h1>Meat Gorumet Menù</h1>
+				<ul>
+					<li>Rice, mazzarella and seasonal vegetables</li>
+					<li>Gnocchi made of potato, pumpkin cream and Sicilian sausage</li>
+					<li>Beef meatball, tomato and tuma</li>
+				</ul>
+		</div>
+	</div>
+
+         <footer>
+            <p> &copy U Zu Totò</p>
+        </footer>
+    <!-- SCRIPT FOR MENU -->
+        <script>
+            function phoneMenu(){
+                if($("nav a img").attr("src")=="menu_close.svg"){
+                    $("nav a img").attr("src", "menu.svg");
+                    $("nav a:not(:first-child)").css("display","none");
+                }else{
+                    $("nav a img").attr("src", "menu_close.svg");
+                    $("nav a:not(:first-child)").css("display","block");
+                }
+            }
+        </script>
+
+
+</body>
+
+</html>

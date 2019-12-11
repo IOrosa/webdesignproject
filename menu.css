@@ -1,0 +1,126 @@
+
+main
+{
+    
+    margin-top: 100px;
+    margin-left: 17%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    background-color: #3b3e47;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 10px 10px #777777;
+    min-width: 240px;
+
+}
+
+
+a
+{
+    text-decoration: none;
+}
+
+a h1
+{
+    text-align: center;
+    border: 1px solid ;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding:10px;
+}
+
+a h1:hover
+{
+    box-shadow: 0 8px 40px rgba(13, 12, 0, 1);
+    color: white;
+}
+
+.left
+{
+
+    position: fixed;
+    background: #1e2026;
+    height: 100%;
+    width: 16%;
+    min-width: 100px;
+    border: 1px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 10px #777777;
+
+}
+
+
+#myMenu
+{
+    padding-left: 3%;
+}
+
+.left ul li
+{
+    padding: 15px;
+    font-weight: bold;
+    list-style: none;
+
+}
+
+.left ul a li
+{
+    text-decoration: none;
+    color: #ff8900;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.left  ul a li:hover
+{
+    color:white;
+    background-color: #494a4d;
+
+}
+
+
+dt
+{
+    margin-top: 38px;  
+    font-size: 22px ; 
+    color: gray;
+    font-weight: bold;
+
+}
+h1
+{
+    font-size: 40px;
+    color: #ff8900;
+ 
+}
+dd
+{
+    margin-bottom: 15px; 
+    font-size: 18px ;
+    margin-left: 0px;
+}
+dl
+{
+   margin-bottom: 100px; 
+}
+
+
+ 
+@media screen and (max-width: 600px) 
+{
+    main
+    {
+        margin-left: 15px;
+
+    }
+    .left
+    {
+        display: none;
+    }
+}
+

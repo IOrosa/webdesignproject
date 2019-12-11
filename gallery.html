@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- EXTERNAL LINK CSS/JAVASCRIPT -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="navBar.css">  
+    <link rel="stylesheet" type="text/css" href="menu.css"> 
+    <title>U Zù Totò - Gallery</title>
+    <link rel="icon" href="icon.png">
+    <style>
+        div.gl {
+          border: 1px solid #ccc;
+          margin-top: 10px;
+        }
+
+        div.gl:hover {
+          border: 1px solid #777;
+        }
+
+        div.gl img {
+          width: 100%;
+          height: auto;
+        }
+
+        .responsive {
+          padding: 0 6px;
+          float: left;
+          width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+          }
+        }
+
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+
+        .clearfix:after 
+        {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        p
+        {
+          font-size: 120%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+
+  <header>
+         <nav>
+             <a href="javascript:void(0);" class="icon" onclick="phoneMenu()">
+             <img src="menu.svg">
+             </a>
+             <a href="index.html">Home</a>
+             <a href="menu.html">Menu</a>
+             <a href="gallery.html">Gallery</a>
+             <a href="contact.html">Contact</a>
+         </nav>
+    </header>
+
+
+    <main style="margin-left: 10px">
+
+
+        <div class="responsive">
+          <div class="gl">
+            <a target="_blank" href="gl1.jpg">
+              <img src="gl1.jpg" width="600" height="400">
+            </a>
+          </div>
+        </div>
+
+
+        <div class="responsive">
+          <div class="gl">
+            <a target="_blank" href="gl2.jpg">
+              <img src="gl2.jpg"  width="600" height="400">
+            </a>
+
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gl">
+            <a target="_blank" href="gl3.jpg">
+              <img src="gl3.jpg"  width="600" height="400">
+            </a>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gl">
+            <a target="_blank" href="gl4.jpg">
+              <img src="gl4.jpg"  width="600" height="400">
+            </a>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gl">
+            <a target="_blank" href="gl4.jpg">
+              <img src="gl5.jpg"  width="600" height="400">
+            </a>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gl">
+            <a target="_blank" href="gl4.jpg">
+              <img src="gl6.jpg"  width="600" height="400">
+            </a>
+          </div>
+        </div>
+
+
+        <div class="responsive">
+          <div class="gl">
+            <a target="_blank" href="gl4.jpg">
+              <img src="gl7.jpg"  width="600" height="400">
+            </a>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        
+        <p>
+            <strong>IN THE HEART OF THE HISTORICAL CENTER </strong>- U Zù Totò is a delightful restaurant and bar with a modern design located in the historic center, a few steps from Trinità dei Monti, in the heart of the eternal city.
+        </p>
+        <p>
+            <strong>SICILIAN CUISINE </strong>- The culinary cultures proposed are represented by the delicacies of the Roman cuisine to the delicacies of the  Sicilian one, having however a particular attention for the vegan cuisine.
+        </p>
+        <p>
+            <strong>LIVE MUSIC </strong>- Do not miss the evenings and musical reviews hosted in this restaurant. A calendar full of events and musical journeys through the history of Italian song.
+        </p>
+
+
+    </main>
+
+
+
+
+    <!-- SCRIPT FOR MENU -->
+        <script>
+            function phoneMenu(){
+                if($("nav a img").attr("src")=="menu_close.svg"){
+                    $("nav a img").attr("src", "menu.svg");
+                    $("nav a:not(:first-child)").css("display","none");
+                }else{
+                    $("nav a img").attr("src", "menu_close.svg");
+                    $("nav a:not(:first-child)").css("display","block");
+                }
+            }
+        </script>
+        
+
+        <footer>
+            <p> &copy U Zu Totò</p>
+        </footer>
+</body>
+</html> 
